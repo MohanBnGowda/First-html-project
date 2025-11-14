@@ -1,0 +1,354 @@
+/* General Page Styles */
+body {
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+/* Main Heading */
+#main-heading {
+  background: linear-gradient(to right, #fd1d1d, #ff7f50);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-top: 20px;
+}
+
+#intro-text {
+  color: aliceblue;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Hero */
+.hero {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.hero video {
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation */
+nav {
+  background-color: aquamarine;
+  border-radius: 50px;
+  width: 90%;
+  margin: 30px auto 0;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#nav-list li {
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  padding: 8px 15px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+/* Gradient Text Heading (Left aligned) */
+.section-title-left {
+  background: linear-gradient(to right, #ff0000, #ffa500);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* Reusable section layout */
+section {
+  width: 85%;
+  margin: 20px auto;
+}
+
+/* About Section */
+#about-me {
+  background-color: bisque;
+  color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(255, 69, 0, 0.5);
+  transition: all 1s linear 0s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#about-me:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+#about-me p {
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* GitHub Link */
+#github-link {
+  text-align: center;
+  display: block;
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+#github-link:hover {
+  text-decoration: underline;
+}
+
+/* Skills Section */
+#skills {
+  background-color: bisque;
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 20px rgba(255, 69, 0, 0.5);
+  transition: all 1s linear 0s;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#skills:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+#skills ul,
+#skills ol,
+#skills dl {
+  text-align: left;
+  padding-left: 40px;
+}
+
+/* Skill Lists */
+.skill-list,
+.learning-goals {
+  list-style: square;
+  margin-left: 30px;
+  color: black;
+}
+
+/* Tech Glossary — FIXED with GRID */
+.tech-glossary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 10px 20px;
+}
+
+.Tech {
+  border: 2px solid rgb(126, 111, 111);
+  background: #09e556;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 800;
+  border-radius: 20px;
+  padding: 10px;
+  height: auto;
+  box-shadow: 2px 5px 10px rebeccapurple;
+  transition: all 1s linear 0s;
+  display: block;
+}
+.Tech:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.tech-glossary dt {
+  font-weight: bold;
+  color: #000;
+}
+.tech-glossary dd {
+  margin-left: 10px;
+  color: #333;
+}
+
+/* Projects Section */
+#projects {
+  background-color: bisque;
+  color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(255, 69, 0, 0.5);
+  transition: all 1s linear 0s;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#projects:hover {
+  transform: scale(1.06);
+}
+#projects h2 {
+  text-align: left;
+  padding-left: 20px;
+}
+#projects ul {
+  list-style: circle;
+  margin: 0;
+  padding-left: 25px;
+  color: black;
+  text-align: left;
+}
+#projects li {
+  margin-left: 0;
+}
+#projects a {
+  color: #0b0d0e;
+  text-decoration: none;
+}
+#projects a:hover {
+  text-decoration: underline;
+}
+
+.fda {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 30px;
+  padding-top: 1px;
+  margin: 0;
+}
+
+/* Contact Section */
+#contact {
+  background-color: bisque;
+  color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(255, 69, 0, 0.5);
+  transition: all 1s linear 0s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#contact:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#contact ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+#contact a {
+  color: #00bfff;
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+  text-align: center;
+}
+.social-icons img {
+  margin: 0 8px;
+  transition: transform 0.2s;
+}
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Back to Top */
+.back-to-top {
+  margin-top: 30px;
+}
+.back-to-top a {
+  text-decoration: none;
+}
+
+/* Section Headings (Goals) */
+.section-goals-left {
+  background: linear-gradient(to right, #372727, #09e556);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 20px;
+  margin: 0;
+  transition: all 1s linear 0s;
+}
+.section-goals-left:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+/* ====== RESPONSIVENESS FIXES ====== */
+
+/* Tablets */
+@media (max-width: 900px) {
+  nav {
+    width: 95%;
+  }
+  #skills,
+  #projects,
+  #about-me,
+  #contact {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  nav {
+    width: 95%;
+  }
+
+  #nav-list {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  section {
+    width: 95%;
+  }
+
+  #main-heading {
+    font-size: 1.8rem;
+  }
+}
